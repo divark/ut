@@ -780,8 +780,8 @@ struct cfg {
     if (argc > 0 && argv != nullptr) {
       cfg::largc = argc;
       cfg::largv = argv;
+      parse(cfg::largc, cfg::largv);
     }
-    parse(cfg::largc, cfg::largv);
   }
 
   static void parse(int argc, const char* argv[]) {
